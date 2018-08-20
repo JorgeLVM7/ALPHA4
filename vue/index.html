@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <!--<div id="app">-->
+        <!--<h1>{{mensaje}}</h1>-->
+    <!--</div>-->
+
+    <hr>
+
+    <div id="app">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-xs-12">
+                    <h1>Agregar nota</h1>
+
+                </div>
+                <div class="col-md-6 col-xs-12" >
+                    <h1>Lista de notas </h1>
+                    <table class="table">
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Promedio</th>
+                        </tr>
+                        <tr v-for="item in lista">
+                            <th v-text="item.nombre"></th>
+                            <th v-text="item.promedio"></th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="js/vue.js"></script>
+<script src="js/principal.js"></script>
+</body>
+</html>
